@@ -36,7 +36,7 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  z-index: 100;
+  z-index: 122;
 }
 header img {
   grid-column: 1/2;
@@ -210,7 +210,7 @@ header .links .link_4 a:hover {
   border: solid black 4px;
   box-shadow: 8px 8px 0px rgb(138, 0, 0);
   filter: none;
-  z-index: 200;
+  z-index: 100;
 }
 .section_03 .small::before {
   content: "";
@@ -281,7 +281,7 @@ header .links .link_4 a:hover {
   border: solid white 4px;
   box-shadow: 8px 8px 0px rgb(71, 183, 93);
   filter: none;
-  z-index: 200;
+  z-index: 100;
 }
 .section_04 .small::before {
   content: "";
@@ -352,7 +352,7 @@ header .links .link_4 a:hover {
   border: solid black 4px;
   box-shadow: 8px 8px 0px rgb(138, 0, 0);
   filter: none;
-  z-index: 200;
+  z-index: 100;
 }
 .section_05 .small::before {
   content: "";
