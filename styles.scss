@@ -116,6 +116,7 @@ $color_03:rgb(138, 0, 0);
             border: solid $menu_box_border_color 4px;
             box-shadow: 8px 8px 0px  $menu_box_accent_color ;
             filter:$menu_box_filter;
+            z-index: 200;
         }
 
         @include bg_sillohet( $background_size:$silohet_bg_size,   
