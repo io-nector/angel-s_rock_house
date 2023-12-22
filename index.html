@@ -5,32 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angel's Rock House</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link 
+            rel="stylesheet" 
+            href="styles.css"
+            media="screen and (min-width:900px)">
+    <link   rel="stylesheet" 
+            href="styles_mobile.css"
+            media="screen and (max-width:900px)">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <body>
     
-    <!-- <div class="top_contact_info">
-        <h2> Call us @</h2>
-        <a href="tel:(707) 263-0841">(707) 263-0841</a>
-    </div> -->
-
     <header>
         <img src="images/logo-cropped.svg" alt="">
 
         <div class="links">
-            <div class="link_1">
+            
+            <!-- link 1 -->
+            <div class="link_1_mobile material-symbols-outlined" >
+                <a href="">Restaurant</a>
+            </div>
+            <div class="link_1_desktop">
                 <a href="">Menu</a>
             </div>
 
-            <div class="link_2">
+            <!-- link 2 -->
+            <div class="link_2_mobile material-symbols-outlined">
+                <a href="">pin_drop</a>
+            </div>
+            <div class="link_2_desktop">
                 <a href="">Location</a>
             </div>
 
-            <div class="link_3">
+            <!-- link 3 -->
+            <div class="link_3_mobile material-symbols-outlined">
+                <a href="">info</a>
+            </div>
+            <div class="link_3_desktop">
                 <a href="">About</a>
             </div>
-            <div class="link_4">
-                <a href="">(707) 263-0841</a>
+
+            <!-- link 4 -->
+            <div class="link_4_mobile material-symbols-outlined">
+                <a href="">phone</a>
+            </div>
+            <div class="link_4_desktop">
+                <a href="tel:7072630841">Call-Us</a>
             </div>
         </div>
     </header>
@@ -77,7 +99,7 @@
             <h1>
                 Margeritas and Bear
             </h1>
-            <a href="" class="menu_box">Drink Menu  
+            <a href="" class="menu_box">Beverages  
             </a>
             <p>
                 Enjoy our authentic cuisine with a refreshing margerita or an ice cold beer. 
@@ -109,6 +131,7 @@
     </div>
 
     <footer>
+        <a href="tel:7072630841">Call-Us @ (707) 263-0841 </a>
     </footer>
     
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
