@@ -19,7 +19,7 @@ $color_03:rgb(138, 0, 0);
 ){
     margin:$margin;
     width: auto;
-    height: $height;
+    min-height: $height;
 }
 
 @mixin bg_sillohet (
@@ -125,19 +125,19 @@ $color_03:rgb(138, 0, 0);
             text-align: center;
             font-weight: normal;
             font-family: 'Yellowtail', cursive;
-            font-size: 70px;
+            font-size: 50px;
             color: $general_font_color;
         }
 
         p {
-            border-top: solid $p_top_border_color 3px;
+            // border-top: solid $p_top_border_color 3px;
             text-align: center;
             font-family: 'Roboto', sans-serif;
             font-size: 25px;
             line-height: 45px;
-            padding-left: 15%;
-            padding-right: 15%;
-            margin-top: 30%;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-top: 10%;
             color:$general_font_color;
         }
     }

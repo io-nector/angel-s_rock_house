@@ -135,7 +135,7 @@ header .links .link_4 a:hover {
 .section_01 {
   margin: 0px;
   width: auto;
-  height: auto;
+  min-height: auto;
 }
 .section_01 img {
   width: 100%;
@@ -147,7 +147,7 @@ header .links .link_4 a:hover {
 .section_02 {
   margin: 15px;
   width: auto;
-  height: auto;
+  min-height: auto;
   background-color: rgb(183, 0, 0);
   position: relative;
   display: flex;
@@ -183,7 +183,7 @@ header .links .link_4 a:hover {
 .section_03 {
   margin: 15px;
   width: auto;
-  height: 70vh;
+  min-height: 70vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -229,18 +229,17 @@ header .links .link_4 a:hover {
   text-align: center;
   font-weight: normal;
   font-family: "Yellowtail", cursive;
-  font-size: 70px;
+  font-size: 50px;
   color: black;
 }
 .section_03 .small p {
-  border-top: solid black 3px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   line-height: 45px;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 10%;
   color: black;
 }
 .section_03 .large {
@@ -254,7 +253,7 @@ header .links .link_4 a:hover {
 .section_04 {
   margin: 15px;
   width: auto;
-  height: 70vh;
+  min-height: 70vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -300,18 +299,17 @@ header .links .link_4 a:hover {
   text-align: center;
   font-weight: normal;
   font-family: "Yellowtail", cursive;
-  font-size: 70px;
+  font-size: 50px;
   color: white;
 }
 .section_04 .small p {
-  border-top: solid white 3px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   line-height: 45px;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 10%;
   color: white;
 }
 .section_04 .large {
@@ -325,7 +323,7 @@ header .links .link_4 a:hover {
 .section_05 {
   margin: 15px;
   width: auto;
-  height: 70vh;
+  min-height: 70vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -371,18 +369,17 @@ header .links .link_4 a:hover {
   text-align: center;
   font-weight: normal;
   font-family: "Yellowtail", cursive;
-  font-size: 70px;
+  font-size: 50px;
   color: black;
 }
 .section_05 .small p {
-  border-top: solid black 3px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   line-height: 45px;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-top: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 10%;
   color: black;
 }
 .section_05 .large {
@@ -396,7 +393,7 @@ header .links .link_4 a:hover {
 .section_06 {
   margin: 15px;
   width: auto;
-  height: auto;
+  min-height: auto;
   background-color: white;
   gap: 20px;
 }
