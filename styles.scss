@@ -1,4 +1,6 @@
-// color tone pastel reds
+// I know silohet is spelled wrong... to lazy to look it up
+
+// color tone pastel mexican heritage
 // variables
 $color_01:rgb(71, 183, 93);
 $color_02:rgb(183, 0, 0);
@@ -6,10 +8,11 @@ $color_03:rgb(138, 0, 0);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Yellowtail&display=swap');
 // font-family: 'Roboto', sans-serif;
-// font-family: 'Yellowtail', cursive;
+// font-family: 'Yellowtail', cursive;  
 
 
-//mixins -----------------------------------------
+//mixins ----------------------------------------------------------------
+//-----------------------------------------------------------------------
 @mixin block_setup (
     $margin:15px,
     $height:50vh,
@@ -39,29 +42,118 @@ $color_03:rgb(138, 0, 0);
   }
 }
 
-@mixin menu_box (
-    $filter:none,
-    $accent_color:$color_03,
-    $font_color:black,
-    $back_ground_color:white,
-    $border_color:black,
+
+@mixin nav_links (
+    $font_color:none,
 ){
-    .menu_box {
-        padding: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color:$back_ground_color;
-        font-size: 25px;
-        font-family: 'Roboto', sans-serif;
-        color: $font_color;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    padding-right: 2%;
+    width: auto;
+
+    a {
+        text-align: center;
         text-decoration: none;
-        border: solid $back_ground_color 4px;
-        box-shadow: 8px 8px 0px  $accent_color ;
-        filter:$filter;
+        color: $font_color;
+
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    a:hover {
+        background-color:rgba(128, 128, 128, 1);
+        transition: background-color 1s ease-in-out;
     }
 }
 
-//styling ----------------------------------------
+@mixin split_section(
+    $menu_box_filter:none,
+    $menu_box_accent_color:$color_03,
+    $menu_box_font_color:black,
+    $menu_box_bg_color:white,
+    $menu_box_border_color:black,
+
+    $silohet_bg_size:75%,   
+    $silohet_filter:none,
+   
+    $general_font_color:black,
+    $small_bg_color:$color_01,
+    $p_top_border_color: black,
+
+    $small_grid_column:1,
+    $large_grid_column:2/ span 2,
+
+    $large_img:none,
+){
+    @include block_setup($height:70vh);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    gap: 15px;
+
+    .small {
+        grid-column: $small_grid_column;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        background-color: $small_bg_color;
+
+
+
+        .menu_box {
+            padding: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color:$menu_box_bg_color;
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+            color: $menu_box_font_color;
+            text-decoration: none;
+            border: solid $menu_box_border_color 4px;
+            box-shadow: 8px 8px 0px  $menu_box_accent_color ;
+            filter:$menu_box_filter;
+        }
+
+        @include bg_sillohet( $background_size:$silohet_bg_size,   
+        $filter:$silohet_filter,);
+
+        h1 {
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Yellowtail', cursive;
+            font-size: 70px;
+            color: $general_font_color;
+        }
+
+        p {
+            border-top: solid $p_top_border_color 3px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            line-height: 45px;
+            padding-left: 15%;
+            padding-right: 15%;
+            margin-top: 30%;
+            color:$general_font_color;
+        }
+    }
+        
+    .large {
+        grid-column: $large_grid_column;
+        background-image: $large_img;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }   
+}
+
+//styling ---------------------------------------------------------------
+//-----------------------------------------------------------------------
+
 html,body {
     // height: 200vh;
     margin: 0px;
@@ -102,9 +194,6 @@ header {
     background-color: white;
     padding: 10px;
     
-    // border-bottom: solid black 5px;
-    // background: linear-gradient(to bottom, rgba(0,0,0,1)40% , rgb(0, 0, 0,0));
-    
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -123,7 +212,6 @@ header {
         grid-row: 1;
         width: auto;
         height: 100%;
-        // background-color: blue;
 
         display: flex;
         justify-content: end;
@@ -132,134 +220,19 @@ header {
 
 
         .link_1{
-            font-family: 'Roboto', sans-serif;
-            font-size: 30px;
-            font-weight: bold;
-
-            padding-right: 2%;
-            width: auto;
-
-            a {
-                text-align: center;
-                text-decoration: none;
-                color: $color_01;
-
-                padding: 5px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            a:hover {
-                background-color:rgba(128, 128, 128, 1);
-                transition: background-color 1s ease-in-out;
-            }
+           @include nav_links($font_color:$color_01);
         }
 
         .link_2 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 30px;
-            font-weight: bold;
-            color: rgb(170, 170, 170);
-            text-decoration: none;
-
-            
-            padding-right: 2%;
-            width: auto;
-
-
-            a {
-                text-align: center;
-                text-decoration: none;
-                color: rgb(175, 175, 175);
-
-                padding: 5px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            a:hover {
-                // background-color: gray;
-
-                background-color:rgba(128, 128, 128, 1);
-                transition: background-color 1s ease-in-out;
-
-                // animation-name: link_1_hover;
-                // animation-duration: .5s;
-                // animation-direction: alternate;
-                // animation-fill-mode: both;
-                // animation-timing-function: ease-out;
-                
-            }
+            @include nav_links(rgb(175, 175, 175));
         }
 
         .link_3 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 30px;
-            font-weight: bold;
-            color: $color_03;
-            text-decoration: none;
-
-            
-            padding-right: 2%;
-            width: auto;
-
-
-            a {
-                text-align: center;
-                text-decoration: none;
-                color: $color_03;
-
-                padding: 5px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            a:hover {
-                // background-color: gray;
-
-                background-color:rgba(128, 128, 128, 1);
-                transition: background-color 1s ease-in-out;
-
-                // animation-name: link_1_hover;
-                // animation-duration: .5s;
-                // animation-direction: alternate;
-                // animation-fill-mode: both;
-                // animation-timing-function: ease-out;
-                
-            }
+            @include nav_links($font_color:$color_03);
         }
 
         .link_4 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 22px;
-            font-weight: bold;
-            color: $color_03;
-            text-decoration: none;
-
-            
-            padding-right: 2%;
-            width: auto;
-
-
-            a {
-                text-align: center;
-                text-decoration: none;
-                color: $color_03;
-
-                padding: 5px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-            a:hover {
-                // background-color: gray;
-
-                background-color:rgba(128, 128, 128, 1);
-                transition: background-color 1s ease-in-out;
-
-                // animation-name: link_1_hover;
-                // animation-duration: .5s;
-                // animation-direction: alternate;
-                // animation-fill-mode: both;
-                // animation-timing-function: ease-out;
-                
-            }
+            @include nav_links($font_color:$color_03);
         }
     }
 }
@@ -272,10 +245,6 @@ header {
         $margin:0px,
     );
 
-    // position: relative;
-    // top:0px;
-    // margin-bottom: 15px;
-
     img {
         width: 100%;
         height: auto;
@@ -284,222 +253,66 @@ header {
 
     }
 
-    // included to add contrast to section split, 
-    // remove if image bottom is more defined.
 }
 
 .section_02 {
-
+    @include block_setup($height:auto);
     background-color:$color_02;
     position: relative;
-    @include block_setup($height:auto);
+
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     padding:10px;
+
     @include bg_sillohet($background_size:40%,$filter:invert(100%));
 
-    // img {
-
-    //     height: 35%;
-    //     filter: invert(100%);
-    // }
     p {
         text-align: center;
         font-family: 'Roboto', sans-serif;
         font-size: 25px;
         line-height: 45px;
-            padding-left: 15%;
-            padding-right: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
         color: white;
-
-
     }
-
 }
 
 .section_03 {
-    @include block_setup($height:70vh);
-    // background-color: rgb(196, 37, 63);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    gap: 15px;
-
-    .section_3_left {
-        grid-column: 1;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        background-color: $color_01;
-
-        @include bg_sillohet();
-        @include menu_box();
-
-        hr {
-            border: 1px solid red;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: normal;
-            font-family: 'Yellowtail', cursive;
-            font-size: 70px;
-        }
-
-        p {
-            border-top: solid black 3px;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            line-height: 45px;
-            padding-left: 15%;
-            padding-right: 15%;
-            margin-top: 30%;
-            
-    
-        }
-    }
-        
-    .section_3_right {
-        grid-column: 2/ span 2;
-        // background-color: blue;
-        // img {
-        //     width: auto;
-        //     height: 100%;
-        //     object-fit: contain
-        // }
-        background-image: url("images/Burrito_05.avif");
-        background-repeat: no-repeat;
-        // object-fit: cover;
-        background-position: center;
-        background-size: cover;
-    }
+    @include split_section($large_img:url("images/Burrito_05.avif"));
 }
 
 .section_04 {
-    @include block_setup($height:70vh);
-    // background-color: rgb(196, 37, 63);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    gap: 15px;
+    @include split_section(
+        $menu_box_filter:none,
+        $menu_box_accent_color:$color_01,
+        $menu_box_font_color:white,
+        $menu_box_bg_color:black,
+        $menu_box_border_color:white,
 
-    .section_4_right {
-        grid-column: 3;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        background-color: $color_03;
+        $silohet_bg_size:75%,   
+        $silohet_filter:invert(100%),
+    
+        $general_font_color:white,
+        $small_bg_color:$color_03,
+        $p_top_border_color: white,
 
-        @include bg_sillohet($filter:invert(100%),);
-        @include menu_box($accent_color:$color_01,$font_color:white,$back_ground_color:black,$border_color:white);
+        $small_grid_column:3,
+        $large_grid_column:1/ span 2,
 
-        hr {
-            border: 1px solid red;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: normal;
-            font-family: 'Yellowtail', cursive;
-            font-size: 70px;
-            color: white;
-        }
-
-        p {
-            border-top: solid rgb(255, 255, 255) 3px;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            line-height: 45px;
-            padding-left: 15%;
-            padding-right: 15%;
-            margin-top: 30%;
-            color: white;
-        }
-    }
-        
-    .section_4_left{
-        grid-column: 1/ span 2;
-        background-image: url("images/margerita.avif");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
+        $large_img:url("images/margerita.avif"),
+    )
 }
 
 .section_05 {
-    @include block_setup($height:70vh);
-    // background-color: rgb(196, 37, 63);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    gap: 15px;
-
-    .section_5_left {
-        grid-column: 1;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        background-color: $color_01;
-
-        @include bg_sillohet();
-        @include menu_box();
-
-        hr {
-            border: 1px solid red;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: normal;
-            font-family: 'Yellowtail', cursive;
-            font-size: 70px;
-        }
-
-        p {
-            border-top: solid black 3px;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            line-height: 45px;
-            padding-left: 15%;
-            padding-right: 15%;
-            margin-top: 30%;
-            
-    
-        }
-    }
-        
-    .section_5_right {
-        grid-column: 2/ span 2;
-        background-image: url("images/tacos.avif");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+    @include split_section($large_img:url("images/tacos.avif"));
 }
 
 .section_06 {
     @include block_setup($height:auto);
     background-color: white;
-    // display: grid;
-    // grid-template-columns: repeat(4,1fr);
     gap: 20px;
-
-    .section_06_01 {
-        grid-column: 1;
-
-    }
 }
 
 footer {
@@ -507,8 +320,3 @@ footer {
     height: 10vh;
     background-color: $color_03;
 }
-
-
-
-// animation key-frames
-

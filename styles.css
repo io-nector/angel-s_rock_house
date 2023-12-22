@@ -78,8 +78,6 @@ header .links .link_2 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(170, 170, 170);
-  text-decoration: none;
   padding-right: 2%;
   width: auto;
 }
@@ -99,8 +97,6 @@ header .links .link_3 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(138, 0, 0);
-  text-decoration: none;
   padding-right: 2%;
   width: auto;
 }
@@ -118,10 +114,8 @@ header .links .link_3 a:hover {
 }
 header .links .link_4 {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
-  color: rgb(138, 0, 0);
-  text-decoration: none;
   padding-right: 2%;
   width: auto;
 }
@@ -151,11 +145,11 @@ header .links .link_4 a:hover {
 }
 
 .section_02 {
-  background-color: rgb(183, 0, 0);
-  position: relative;
   margin: 15px;
   width: auto;
   height: auto;
+  background-color: rgb(183, 0, 0);
+  position: relative;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -195,7 +189,7 @@ header .links .link_4 a:hover {
   grid-template-rows: 1fr;
   gap: 15px;
 }
-.section_03 .section_3_left {
+.section_03 .small {
   grid-column: 1;
   display: flex;
   justify-content: center;
@@ -204,7 +198,20 @@ header .links .link_4 a:hover {
   position: relative;
   background-color: rgb(71, 183, 93);
 }
-.section_03 .section_3_left::before {
+.section_03 .small .menu_box {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+  border: solid black 4px;
+  box-shadow: 8px 8px 0px rgb(138, 0, 0);
+  filter: none;
+}
+.section_03 .small::before {
   content: "";
   position: absolute;
   top: 0;
@@ -218,29 +225,14 @@ header .links .link_4 a:hover {
   opacity: 0.2;
   filter: none;
 }
-.section_03 .section_3_left .menu_box {
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: white;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  text-decoration: none;
-  border: solid white 4px;
-  box-shadow: 8px 8px 0px rgb(138, 0, 0);
-  filter: none;
-}
-.section_03 .section_3_left hr {
-  border: 1px solid red;
-}
-.section_03 .section_3_left h1 {
+.section_03 .small h1 {
   text-align: center;
   font-weight: normal;
   font-family: "Yellowtail", cursive;
   font-size: 70px;
+  color: black;
 }
-.section_03 .section_3_left p {
+.section_03 .small p {
   border-top: solid black 3px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -249,8 +241,9 @@ header .links .link_4 a:hover {
   padding-left: 15%;
   padding-right: 15%;
   margin-top: 30%;
+  color: black;
 }
-.section_03 .section_3_right {
+.section_03 .large {
   grid-column: 2/span 2;
   background-image: url("images/Burrito_05.avif");
   background-repeat: no-repeat;
@@ -267,7 +260,7 @@ header .links .link_4 a:hover {
   grid-template-rows: 1fr;
   gap: 15px;
 }
-.section_04 .section_4_right {
+.section_04 .small {
   grid-column: 3;
   display: flex;
   justify-content: center;
@@ -276,7 +269,20 @@ header .links .link_4 a:hover {
   position: relative;
   background-color: rgb(138, 0, 0);
 }
-.section_04 .section_4_right::before {
+.section_04 .small .menu_box {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  border: solid white 4px;
+  box-shadow: 8px 8px 0px rgb(71, 183, 93);
+  filter: none;
+}
+.section_04 .small::before {
   content: "";
   position: absolute;
   top: 0;
@@ -290,31 +296,15 @@ header .links .link_4 a:hover {
   opacity: 0.2;
   filter: invert(100%);
 }
-.section_04 .section_4_right .menu_box {
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: black;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-decoration: none;
-  border: solid black 4px;
-  box-shadow: 8px 8px 0px rgb(71, 183, 93);
-  filter: none;
-}
-.section_04 .section_4_right hr {
-  border: 1px solid red;
-}
-.section_04 .section_4_right h1 {
+.section_04 .small h1 {
   text-align: center;
   font-weight: normal;
   font-family: "Yellowtail", cursive;
   font-size: 70px;
   color: white;
 }
-.section_04 .section_4_right p {
-  border-top: solid rgb(255, 255, 255) 3px;
+.section_04 .small p {
+  border-top: solid white 3px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 25px;
@@ -324,7 +314,7 @@ header .links .link_4 a:hover {
   margin-top: 30%;
   color: white;
 }
-.section_04 .section_4_left {
+.section_04 .large {
   grid-column: 1/span 2;
   background-image: url("images/margerita.avif");
   background-repeat: no-repeat;
@@ -341,7 +331,7 @@ header .links .link_4 a:hover {
   grid-template-rows: 1fr;
   gap: 15px;
 }
-.section_05 .section_5_left {
+.section_05 .small {
   grid-column: 1;
   display: flex;
   justify-content: center;
@@ -350,7 +340,20 @@ header .links .link_4 a:hover {
   position: relative;
   background-color: rgb(71, 183, 93);
 }
-.section_05 .section_5_left::before {
+.section_05 .small .menu_box {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-decoration: none;
+  border: solid black 4px;
+  box-shadow: 8px 8px 0px rgb(138, 0, 0);
+  filter: none;
+}
+.section_05 .small::before {
   content: "";
   position: absolute;
   top: 0;
@@ -364,29 +367,14 @@ header .links .link_4 a:hover {
   opacity: 0.2;
   filter: none;
 }
-.section_05 .section_5_left .menu_box {
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: white;
-  font-size: 25px;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  text-decoration: none;
-  border: solid white 4px;
-  box-shadow: 8px 8px 0px rgb(138, 0, 0);
-  filter: none;
-}
-.section_05 .section_5_left hr {
-  border: 1px solid red;
-}
-.section_05 .section_5_left h1 {
+.section_05 .small h1 {
   text-align: center;
   font-weight: normal;
   font-family: "Yellowtail", cursive;
   font-size: 70px;
+  color: black;
 }
-.section_05 .section_5_left p {
+.section_05 .small p {
   border-top: solid black 3px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -395,8 +383,9 @@ header .links .link_4 a:hover {
   padding-left: 15%;
   padding-right: 15%;
   margin-top: 30%;
+  color: black;
 }
-.section_05 .section_5_right {
+.section_05 .large {
   grid-column: 2/span 2;
   background-image: url("images/tacos.avif");
   background-repeat: no-repeat;
@@ -410,9 +399,6 @@ header .links .link_4 a:hover {
   height: auto;
   background-color: white;
   gap: 20px;
-}
-.section_06 .section_06_01 {
-  grid-column: 1;
 }
 
 footer {
