@@ -90,34 +90,38 @@ $color_03:rgb(138, 0, 0);
     $small_bg_color:$color_01,
     $p_top_border_color: black,
 
-    $small_grid_column:1,
-    $large_grid_column:2/ span 2,
+    // $small_grid_column:1,
+    // $large_grid_column:2/ span 2,
 
     $large_img:none,
 ){
-    @include block_setup($height:70vh);
+    @include block_setup($height:30vh);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 15px;
+    // gap: 15px;
 
     .small {
-        grid-column: $small_grid_column;
+        grid-column: 1;
         display:flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         position: relative;
+        // height: 50%;
+
         background-color: $small_bg_color;
+        z-index: 90;
 
 
 
         .menu_box {
+            
             padding: 10px;
             padding-left: 30px;
             padding-right: 30px;
             background-color:$menu_box_bg_color;
-            font-size: 25px;
+            font-size: 20px;
             font-family: 'Roboto', sans-serif;
             color: $menu_box_font_color;
             text-decoration: none;
@@ -142,8 +146,8 @@ $color_03:rgb(138, 0, 0);
             // border-top: solid $p_top_border_color 3px;
             text-align: center;
             font-family: 'Roboto', sans-serif;
-            font-size: 25px;
-            line-height: 45px;
+            font-size: 18px;
+            line-height: 20px;
             padding-left: 5%;
             padding-right: 5%;
             margin-top: 10%;
@@ -152,7 +156,8 @@ $color_03:rgb(138, 0, 0);
     }
         
     .large {
-        grid-column: $large_grid_column;
+        position: absolute;
+        grid-column: 1;
         background-image: $large_img;
         background-repeat: no-repeat;
         background-position: center;
@@ -167,7 +172,7 @@ html,body {
     // height: 200vh;
     margin: 0px;
     padding: 0px;
-    background: white;
+    background: black;
 }
 
 
@@ -275,7 +280,7 @@ header {
 
 
 .section_01 {
-
+    position: relative;
     @include block_setup(
         $height:auto,
         $margin:0px,
@@ -307,10 +312,10 @@ header {
     p {
         text-align: center;
         font-family: 'Roboto', sans-serif;
-        font-size: 25px;
-        line-height: 45px;
-        padding-left: 15%;
-        padding-right: 15%;
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 8%;
+        padding-right: 8%;
         color: white;
     }
 }
@@ -334,8 +339,8 @@ header {
         $small_bg_color:$color_03,
         $p_top_border_color: white,
 
-        $small_grid_column:3,
-        $large_grid_column:1/ span 2,
+        // $small_grid_column:3,
+        // $large_grid_column:1/ span 2,
 
         $large_img:url("images/margerita.avif"),
     )
