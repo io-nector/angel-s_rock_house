@@ -52,7 +52,7 @@
                 <a href="">phone</a>
             </div>
             <div class="link_4_desktop">
-                <a href="tel:7072630841">Call-Us</a>
+                <a href="tel:7072630841">Contact</a>
             </div>
         </div>
     </header>
@@ -92,15 +92,81 @@
 
     <div class="section_04">
 
-        <div class="large">
+        <div class="large" id="drinks">
+            <h1 class="h1_grn">Beer & Wine</h1>
+
+            <div class="drink_item_01">
+                <div class="h2">Imported Beer</div>
+
+                <div class="ul_left">
+                    
+                        <p>Corona div</p>
+                        <p>Corona Light</p>
+                        <p>Pacifico</p>
+                        <p>Modelo Especial</p>
+                    
+                </div>
+
+                <div class="ul_right">
+                    
+                        <p>negra modelo</p>
+                        <p>Tecate</p>
+                        <p>Dos Equis</p>
+                    
+                </div>
+                
+            </div>
+
+            <div class="drink_item_02">
+                <div class="h2">Domestic Beer</div>
+
+                <div class="ul_left">
+                        <p>Budweiser</p>
+                        <p>Bud Light</p>
+                        <p>Coors</p>
+                        <p>Coors Light</p>
+                </div>
+
+                <div class="ul_right">
+                        <p>Miller Genuine Draft</p>
+                        <p>O'Doul's</p>
+                </div>
+                
+            </div>
+
+            <div class="drink_item_03">
+                <div class="h2">Wine</div>
+
+                <div class="ul_left">
+                    <p>Glass</p>
+                    <p>1/2 Carafe</p>
+                    <p>Carafe</p>
+                </div>                
+            </div>
+
+            <div class="drink_item_04">
+                <div class="h2">Margaritas</div>
+
+                <div class="ul_left">
+                    <p>Virgin Margarita</p>
+                    <p>Glass</p>
+                    <p>Small Pitcher</p>
+                    <p>Large Pitcher</p>
+                    <p>Tequila Shot</p>
+                </div>                
+            </div>
+
         </div>
 
         <div class="small">
             <h1>
                 Margeritas and Beer
             </h1>
-            <a href="" class="menu_box">Drink Menu  
-            </a>
+            
+            <div class="menu_box">
+                <input type="checkbox" id="drink_checkbox" onchange="toggleChecked()">
+                <label for="drink_checkbox">Drink Menu</label>
+            </div> 
             <p>
                 Enjoy our authentic cuisine with a refreshing margerita or an ice cold beer. 
             </p>
@@ -114,14 +180,74 @@
             <h1>
                 Starters
             </h1>
-            <a href="" class="menu_box">Appitizer Menu   
-            </a>
+            <div class="menu_box">
+                <input type="checkbox" id="starters_checkbox" onchange="toggleChecked()">
+                <label for="starters_checkbox">Appetizer Menu</label>
+            </div>
             <p>
                 Hungry? Enjoy one or our favorite starters to hold you over while we prepare your delicious main course.
             </p>
         </div>
 
-        <div class="large">
+        <div class="large" id="starters">
+            <h1 class="h1_red">Starters</h1>
+
+            <div class="starter_item_01">
+                <div class="h2">
+                    Nachos
+                </div>
+                <div class="ul">
+                    <p>
+                        Homemade chips topped with: 
+                    </p>
+                    <p>cheese</p> 
+                    <p>meat</p>
+                    <p>sour cream</p> 
+                    <p>guacamole</p>
+                    <p>and tomatoes</p>
+                </div>
+            </div>
+
+            <div class="starter_item_02">
+                <div class="h2">
+                    Cheese Quesadilla
+                </div>
+                <div class="ul">
+                    <p>
+                        Flour tortilla filled with cheese, garnished with: </p>
+                    <p>lettuce</p>
+                    <p>sour cream</p> 
+                    <p>and guacamole</p>
+                </div>
+            </div>
+
+            <div class="starter_item_03">
+                <div class="h2">
+                    Cocktail de Camaron
+                </div>
+                <div class="ul">
+                    <p>
+                        Shrimp Cocktail Mexican style, lightly seasoned.
+                    </p>
+                </div>
+            </div>
+
+            <div class="starter_item_04">
+                <div class="h2">
+                    Awesome Dips
+                </div>
+                <div class="ul">
+                    <p>
+                        Bean & cheese Dip
+                    </p>
+                    <p>
+                        Guacamole
+                    </p>
+                    <p>
+                        Sour Cream
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -135,5 +261,6 @@
     </footer>
     
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script src="menu_pop_ups.js" defer></script>
 </body>
 </html>

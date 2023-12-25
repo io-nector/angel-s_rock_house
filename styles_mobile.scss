@@ -175,6 +175,10 @@ html,body {
     background: black;
 }
 
+//place holder unti mobile is built up
+input[type='checkbox'] {
+    opacity: 0;
+}
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -321,8 +325,11 @@ header {
 }
 
 .section_03 {
-    @include split_section($large_img:url("images/Burrito_05.avif"));
+//     @include split_section($large_img:url("images/Burrito_05.avif"));
+
+@include split_section;
 }
+
 
 .section_04 {
     @include split_section(
@@ -342,12 +349,20 @@ header {
         // $small_grid_column:3,
         // $large_grid_column:1/ span 2,
 
-        $large_img:url("images/margerita.avif"),
-    )
+        // $large_img:url("images/margerita.avif"),
+    );
+
+    .large {
+        display:none;
+    }
 }
 
 .section_05 {
-    @include split_section($large_img:url("images/tacos.avif"));
+    // @include split_section($large_img:url("images/tacos.avif"));
+    @include split_section;
+    .large {
+        display: none;
+    }
 }
 
 .section_06 {
@@ -355,6 +370,10 @@ header {
     background-color: white;
     gap: 20px;
 }
+
+
+
+
 
 footer {
     width: 100%;

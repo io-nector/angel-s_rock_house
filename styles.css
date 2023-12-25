@@ -215,6 +215,12 @@ header .links .link_4_desktop a:hover {
   filter: none;
   z-index: 100;
 }
+.section_03 .small .menu_box input[type=checkbox] {
+  opacity: 0;
+}
+.section_03 .small .menu_box label {
+  cursor: pointer;
+}
 .section_03 .small::before {
   content: "";
   position: absolute;
@@ -252,6 +258,398 @@ header .links .link_4_desktop a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: background-color 0.3s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% repeat(2, 1fr);
+}
+.section_03 .large .h1_grn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  grid-column: 1/-1;
+  grid-row: 1;
+  padding-left: 3%;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  color: black;
+  background-color: rgba(71, 183, 93, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .h1_red {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  grid-column: 1/-1;
+  grid-row: 1;
+  padding-left: 3%;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(138, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .drink_item_01 {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .drink_item_01 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .drink_item_01 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_01 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_01 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_03 .large .drink_item_02 {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .drink_item_02 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .drink_item_02 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_02 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_02 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_03 .large .drink_item_03 {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .drink_item_03 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .drink_item_03 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_03 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_03 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_03 .large .drink_item_04 {
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .drink_item_04 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .drink_item_04 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_04 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_03 .large .drink_item_04 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_03 .large .starter_item_01 {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .starter_item_01 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .starter_item_01 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_03 .large .starter_item_01 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_03 .large .starter_item_02 {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .starter_item_02 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .starter_item_02 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_03 .large .starter_item_02 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_03 .large .starter_item_03 {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .starter_item_03 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .starter_item_03 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_03 .large .starter_item_03 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 1.25;
+  padding-left: 15px;
+}
+.section_03 .large .starter_item_04 {
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_03 .large .starter_item_04 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_03 .large .starter_item_04 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_03 .large .starter_item_04 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_03 .checked .h1_grn {
+  opacity: 1;
+}
+.section_03 .checked .h1_red {
+  opacity: 1;
+}
+.section_03 .checked .drink_item_01 {
+  opacity: 1;
+}
+.section_03 .checked .drink_item_02 {
+  opacity: 1;
+}
+.section_03 .checked .drink_item_03 {
+  opacity: 1;
+}
+.section_03 .checked .drink_item_04 {
+  opacity: 1;
+}
+.section_03 .checked .starter_item_01 {
+  opacity: 1;
+}
+.section_03 .checked .starter_item_02 {
+  opacity: 1;
+}
+.section_03 .checked .starter_item_03 {
+  opacity: 1;
+}
+.section_03 .checked .starter_item_04 {
+  opacity: 1;
 }
 
 .section_04 {
@@ -285,6 +683,12 @@ header .links .link_4_desktop a:hover {
   box-shadow: 8px 8px 0px rgb(71, 183, 93);
   filter: none;
   z-index: 100;
+}
+.section_04 .small .menu_box input[type=checkbox] {
+  opacity: 0;
+}
+.section_04 .small .menu_box label {
+  cursor: pointer;
 }
 .section_04 .small::before {
   content: "";
@@ -323,6 +727,398 @@ header .links .link_4_desktop a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: background-color 0.3s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% repeat(2, 1fr);
+}
+.section_04 .large .h1_grn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  grid-column: 1/-1;
+  grid-row: 1;
+  padding-left: 3%;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  color: black;
+  background-color: rgba(71, 183, 93, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .h1_red {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  grid-column: 1/-1;
+  grid-row: 1;
+  padding-left: 3%;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(138, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .drink_item_01 {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .drink_item_01 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .drink_item_01 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_01 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_01 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_04 .large .drink_item_02 {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .drink_item_02 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .drink_item_02 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_02 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_02 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_04 .large .drink_item_03 {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .drink_item_03 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .drink_item_03 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_03 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_03 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_04 .large .drink_item_04 {
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .drink_item_04 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .drink_item_04 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_04 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_04 .large .drink_item_04 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_04 .large .starter_item_01 {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .starter_item_01 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .starter_item_01 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_04 .large .starter_item_01 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_04 .large .starter_item_02 {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .starter_item_02 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .starter_item_02 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_04 .large .starter_item_02 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_04 .large .starter_item_03 {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .starter_item_03 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .starter_item_03 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_04 .large .starter_item_03 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 1.25;
+  padding-left: 15px;
+}
+.section_04 .large .starter_item_04 {
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_04 .large .starter_item_04 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_04 .large .starter_item_04 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_04 .large .starter_item_04 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_04 .checked .h1_grn {
+  opacity: 1;
+}
+.section_04 .checked .h1_red {
+  opacity: 1;
+}
+.section_04 .checked .drink_item_01 {
+  opacity: 1;
+}
+.section_04 .checked .drink_item_02 {
+  opacity: 1;
+}
+.section_04 .checked .drink_item_03 {
+  opacity: 1;
+}
+.section_04 .checked .drink_item_04 {
+  opacity: 1;
+}
+.section_04 .checked .starter_item_01 {
+  opacity: 1;
+}
+.section_04 .checked .starter_item_02 {
+  opacity: 1;
+}
+.section_04 .checked .starter_item_03 {
+  opacity: 1;
+}
+.section_04 .checked .starter_item_04 {
+  opacity: 1;
 }
 
 .section_05 {
@@ -356,6 +1152,12 @@ header .links .link_4_desktop a:hover {
   box-shadow: 8px 8px 0px rgb(138, 0, 0);
   filter: none;
   z-index: 100;
+}
+.section_05 .small .menu_box input[type=checkbox] {
+  opacity: 0;
+}
+.section_05 .small .menu_box label {
+  cursor: pointer;
 }
 .section_05 .small::before {
   content: "";
@@ -394,6 +1196,398 @@ header .links .link_4_desktop a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: background-color 0.3s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20% repeat(2, 1fr);
+}
+.section_05 .large .h1_grn {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  grid-column: 1/-1;
+  grid-row: 1;
+  padding-left: 3%;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  color: black;
+  background-color: rgba(71, 183, 93, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .h1_red {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  grid-column: 1/-1;
+  grid-row: 1;
+  padding-left: 3%;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Yellowtail", cursive;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(138, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .drink_item_01 {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .drink_item_01 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .drink_item_01 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_01 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_01 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_05 .large .drink_item_02 {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .drink_item_02 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .drink_item_02 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_02 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_02 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_05 .large .drink_item_03 {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .drink_item_03 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .drink_item_03 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_03 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_03 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_05 .large .drink_item_04 {
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .drink_item_04 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .drink_item_04 .ul_left {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_04 .ul_right {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section_05 .large .drink_item_04 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.5;
+  padding-left: 15px;
+}
+.section_05 .large .starter_item_01 {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .starter_item_01 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .starter_item_01 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_05 .large .starter_item_01 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_05 .large .starter_item_02 {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .starter_item_02 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .starter_item_02 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_05 .large .starter_item_02 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_05 .large .starter_item_03 {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .starter_item_03 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .starter_item_03 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_05 .large .starter_item_03 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 1.25;
+  padding-left: 15px;
+}
+.section_05 .large .starter_item_04 {
+  grid-column: 2;
+  grid-row: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px auto;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.492);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.section_05 .large .starter_item_04 .h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: rgb(138, 0, 0);
+  font-style: italic;
+  padding: none;
+}
+.section_05 .large .starter_item_04 .ul {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.section_05 .large .starter_item_04 p {
+  text-align: left;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 0.4;
+  padding-left: 15px;
+}
+.section_05 .checked .h1_grn {
+  opacity: 1;
+}
+.section_05 .checked .h1_red {
+  opacity: 1;
+}
+.section_05 .checked .drink_item_01 {
+  opacity: 1;
+}
+.section_05 .checked .drink_item_02 {
+  opacity: 1;
+}
+.section_05 .checked .drink_item_03 {
+  opacity: 1;
+}
+.section_05 .checked .drink_item_04 {
+  opacity: 1;
+}
+.section_05 .checked .starter_item_01 {
+  opacity: 1;
+}
+.section_05 .checked .starter_item_02 {
+  opacity: 1;
+}
+.section_05 .checked .starter_item_03 {
+  opacity: 1;
+}
+.section_05 .checked .starter_item_04 {
+  opacity: 1;
 }
 
 .section_06 {

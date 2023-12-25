@@ -5,6 +5,10 @@ html, body {
   background: black;
 }
 
+input[type=checkbox] {
+  opacity: 0;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
@@ -256,7 +260,7 @@ header .links .link_4_desktop a {
 .section_03 .large {
   position: absolute;
   grid-column: 1;
-  background-image: url("images/Burrito_05.avif");
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -328,10 +332,13 @@ header .links .link_4_desktop a {
 .section_04 .large {
   position: absolute;
   grid-column: 1;
-  background-image: url("images/margerita.avif");
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.section_04 .large {
+  display: none;
 }
 
 .section_05 {
@@ -400,10 +407,13 @@ header .links .link_4_desktop a {
 .section_05 .large {
   position: absolute;
   grid-column: 1;
-  background-image: url("images/tacos.avif");
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.section_05 .large {
+  display: none;
 }
 
 .section_06 {
